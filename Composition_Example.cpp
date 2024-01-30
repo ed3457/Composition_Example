@@ -2,10 +2,27 @@
 //
 
 #include <iostream>
-
+#include "Department.h"
+using namespace std; 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Department csDept; 
+
+    cout << csDept.getName() << endl;
+
+    cout << csDept.getAddress().getCity() << endl;
+
+    Address csDeptAddress = csDept.getAddress();
+
+    Address newDeptAddress;
+    newDeptAddress.setCity("Detroit");
+
+    csDept.setAddress(newDeptAddress);
+
+    // csDept.getAddress().setCity("Detroit"); will not change the original object because it is a copy
+
+    cout << csDept.getAddress().getCity() << endl;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
