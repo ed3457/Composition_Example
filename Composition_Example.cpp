@@ -12,14 +12,14 @@ int main()
 
     cout << csDept.getAddress().getCity() << endl;
 
-    Address csDeptAddress = csDept.getAddress();
+    //Address csDeptAddress = csDept.getAddress();
 
-    Address newDeptAddress;
-    newDeptAddress.setCity("Detroit");
+    //Address newDeptAddress;
+    //newDeptAddress.setCity("Detroit");
 
-    csDept.setAddress(newDeptAddress);
+     //csDept.setAddress(newDeptAddress);
 
-    // csDept.getAddress().setCity("Detroit"); will not change the original object because it is a copy
+    csDept.getAddress().setCity("Detroit"); //will not change the original object because it is a copy
 
     cout << csDept.getAddress().getCity() << endl;
 

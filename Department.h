@@ -8,7 +8,7 @@ private:
 
 public:
 	void setAddress(Address a);
-	Address getAddress();
+	Address & getAddress();
 
 	void setName(string n);
 
